@@ -1,0 +1,4 @@
+base:
+  teamspeak:
+    - mysql
+    - server

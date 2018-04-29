@@ -1,4 +1,3 @@
 base:
   teamspeak:
-    - user
     - password

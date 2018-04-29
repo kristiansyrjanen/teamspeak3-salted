@@ -1,4 +1,5 @@
 base:
   teamspeak:
-    - mysql
+    - user
+    - firewall
     - server

@@ -1,0 +1,2 @@
+mysql:
+  pkg.installed

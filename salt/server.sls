@@ -2,6 +2,7 @@
   file.managed:
     - source: salt://scripts/deployteamspeak.sh
 
-./deployteamspeak.sh:
-  cmd.run
+runscript:
+  cmd.run:
+    - name: home/xubuntu/deployteamspeak.sh
     

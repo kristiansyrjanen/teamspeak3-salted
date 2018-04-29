@@ -1,5 +1,5 @@
 base:
   teamspeak:
-    - user
+#    - user
     - firewall
     - server

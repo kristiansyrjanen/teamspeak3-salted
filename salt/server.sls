@@ -1,4 +1,4 @@
 runscript:
-  cmd.run:
+  cmd.script:
     - source: salt://scripts/deployteamspeak.sh
     

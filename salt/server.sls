@@ -1,4 +1,4 @@
 runscript:
   cmd.run:
-    - name: home/xubuntu/deployteamspeak.sh
+    - source: salt://scripts/deployteamspeak.sh
     

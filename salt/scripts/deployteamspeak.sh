@@ -18,8 +18,8 @@ echo -e "\n${CYAN}Fetching and extracting Teamspeak 3 Server tarball... \n" ${NC
         
 echo -e "\n${CYAN}Moving files around and changing ownership... \n" ${NC}
 
-        mv teamspeak3-server_linux_amd64 /usr/local/teamspeak
-        chown -R teamspeak:teamspeak /usr/local/teamspeak
+        mv teamspeak3-server_linux_amd64 /usr/local/xubuntu
+        chown -R xubuntu:xubuntu /usr/local/xubuntu
 
 echo -e "\n${CYAN}Connecting ts3server_startscript.sh with /etc/init.d/teamspeak... \n" ${NC}
 
@@ -29,5 +29,5 @@ echo -e "\n${CYAN}Configuring Teamspeak to automatically run after bootup... \n"
         
         update-rc.d teamspeak defaults
         
-echo -e "\n${CYAN}Get your privilege key with: cat /usr/local/teamspeak/logs/ts3server_* \n" ${NC}
+echo -e "\n${CYAN}Get your privilege key with: cat /usr/local/xubuntu/logs/ts3server_* \n" ${NC}
 echo -e "\n${CYAN}Search for the token line... \n" ${NC}

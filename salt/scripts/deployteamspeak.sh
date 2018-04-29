@@ -31,7 +31,7 @@ echo -e "\n${CYAN}Configuring Teamspeak to automatically run after bootup... \n"
 
 echo -e "\n${CYAN}Starting up service... \n" ${NC}
 
-        sudo service teamspeak start
+        sudo systemctl restart teamspeak.service
 
 echo -e "\n${CYAN}Get your privilege key with: cat /usr/local/xubuntu/logs/ts3server_* \n" ${NC}
 echo -e "\n${CYAN}Search for the token line... \n" ${NC}

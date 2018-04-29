@@ -24,5 +24,9 @@ echo -e "\n${CYAN}Connecting ts3server_startscript.sh with /etc/init.d/teamspeak
 
         ln -s /usr/local/teamspeak/ts3server_startscript.sh /etc/init.d/teamspeak
         
+echo -e "\n${CYAN}Configuring Teamspeak to automatically run after bootup... \n" ${NC}
+        
+        update-rc.d teamspeak defaults
+        
 echo -e "\n${CYAN}Get your privilege key with: cat /usr/local/teamspeak/logs/ts3server_* \n" ${NC}
 echo -e "\n${CYAN}Search for the token line... \n" ${NC}

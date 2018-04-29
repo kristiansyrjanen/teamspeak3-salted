@@ -1,5 +1,6 @@
 #!/bin/bash
-
+#Created by Kristian Syrjänen 2018.
+#Final assignment on our Server Management course by Tero Karvinen.
 
 CYAN='\033[0;36m'
 NC='\033[0m'

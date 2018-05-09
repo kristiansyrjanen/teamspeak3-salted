@@ -28,6 +28,7 @@ echo -e "\nConfiguring Teamspeak to automatically run after bootup... \n"
 echo -e "\nStarting up service... \n" 
 
         /usr/local/$USER/ts3server_startscript.sh start
+        ^C
 
 echo -e "\nGet your privilege key with: cat /usr/local/"$USER"/logs/ts3server_* \n" 
 echo -e "\nSearch for the token line... \n"

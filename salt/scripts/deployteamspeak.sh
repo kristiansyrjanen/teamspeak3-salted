@@ -20,7 +20,7 @@ echo -e "\nMoving files around and changing ownership... \n"
 
 echo -e "\nConnecting ts3server_startscript.sh with /etc/init.d/teamspeak... \n"
 
-        sudo n -s /usr/local/teamspeak/ts3server_startscript.sh /etc/init.d/teamspeak
+        sudo n -s /usr/local/xubuntu/ts3server_startscript.sh /etc/init.d/teamspeak
         
 echo -e "\nConfiguring Teamspeak to automatically run after bootup... \n"
         

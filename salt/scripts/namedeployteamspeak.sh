@@ -6,7 +6,7 @@ NAME="$(ps -o user= -p $$ | awk '{print $1}')"
 
 echo -e "\nInitializing Teamspeak 3 Server deployment... \n" 
 
-#        apt-get update && upgrade
+        apt-get update
 
         
 echo -e "\nFetching and extracting Teamspeak 3 Server tarball... \n" 

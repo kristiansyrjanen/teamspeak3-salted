@@ -81,7 +81,7 @@ I created a firewall.sls state file. The firewall state needs user.rules and use
     
 Teamspeak 3 daemon needs 3 ports open: 9987/udp, 10011/tcp and 3033/tcp. These will be in the user.rules and user6.rules files.
 
-The important lines on the user.rules file. (https://github.com/kristiansyrjanen/teamspeak3-salted/blob/master/salt/firewall/user.rules)
+[The important lines on the user.rules file.](https://github.com/kristiansyrjanen/teamspeak3-salted/blob/master/salt/firewall/user.rules)
     
 
     ### tuple ### allow tcp 22 0.0.0.0/0 any 0.0.0.0/0 in
@@ -98,7 +98,7 @@ The important lines on the user.rules file. (https://github.com/kristiansyrjanen
 
     
     
-And the important lines on the user6.rules file. (https://github.com/kristiansyrjanen/teamspeak3-salted/blob/master/salt/firewall/user6.rules)
+[And the important lines on the user6.rules file.](https://github.com/kristiansyrjanen/teamspeak3-salted/blob/master/salt/firewall/user6.rules)
     
     ### tuple ### allow tcp 22 ::/0 any ::/0 in
     -A ufw6-user-input -p tcp --dport 22 -j ACCEPT

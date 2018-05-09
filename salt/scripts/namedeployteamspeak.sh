@@ -21,7 +21,7 @@ echo -e "\nMoving files around and changing ownership... \n"
 
 echo -e "\nConnecting ts3server_startscript.sh with /etc/init.d/teamspeak... \n"
 
-        sudo n -s /usr/local/$NAME/ts3server_startscript.sh /etc/init.d/teamspeak
+        sudo ln -s /usr/local/$NAME/ts3server_startscript.sh /etc/init.d/teamspeak
         
 echo -e "\nConfiguring Teamspeak to automatically run after bootup... \n"
         
@@ -29,8 +29,7 @@ echo -e "\nConfiguring Teamspeak to automatically run after bootup... \n"
 
 echo -e "\nStarting up service... \n" 
 
-        /usr/local/$NAME/ts3server_startscript.sh start
-        ^C
+        sudo systemctl start teamspeak
 
 echo -e "\nGet your privilege key with: cat /usr/local/"$NAME"/logs/ts3server_* \n" 
 echo -e "\nSearch for the token line... \n"

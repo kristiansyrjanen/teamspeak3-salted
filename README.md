@@ -1,5 +1,5 @@
 # teamspeak3-salted
-Salt state that will install a Teamspeak 3 daemon on a Xubuntu 16.04 Live-USB instance. 
+Salt state that will install a Teamspeak 3 daemon on a Xubuntu 18.04 LTS Live-USB instance. 
 
 ## Getting started
 Done on a Lenovo Ideapad 700 with Xubuntu 16.0.4 LTS live-USB.

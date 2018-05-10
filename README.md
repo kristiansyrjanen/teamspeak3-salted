@@ -167,8 +167,10 @@ Now that I have all in the right places I can run my state.
 
     sudo salt '*' state.highstate
     
-Seems like the state worked. Tried to connect with the IP address to the newly made TS3 server and I got in.
+Seems like the state worked. Tried to connect with the IP address to the newly made TS3 server and I got in. This means that both the **firewall.sls** and the **server.sls** works. 
 
-All the files are in place under **/usr/local/xubuntu/**
+Also all of the files are in place, under **/usr/local/xubuntu/**.
 
 # The module is ready for presentation
+
+##### Might add more states during the weekend, eg. user creation using pillars and jinja.

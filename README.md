@@ -74,10 +74,10 @@ I created a **firewall.sls** state file. The firewall state needs **user.rules**
           - pkg: ufw
 
     ufw-enable:
-       cmd.run:
-         - name: 'ufw --force enable'
-         - require:
-    - pkg: ufw
+      cmd.run:
+        - name: 'ufw --force enable'
+        - require:
+          - pkg: ufw
     
 Teamspeak 3 daemon needs 3 ports open: **9987/udp**, **10011/tcp** and **3033/tcp**. These will be in the **user.rules** and **user6.rules** files.
 

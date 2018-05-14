@@ -163,6 +163,10 @@ I clone the repository and move the **salt** directory under **/srv/**. NOTE: Yo
     cd teamspeak3-salted
     sudo mv salt/ /srv/
 
+Or you can run it locally straight from your /home/xubuntu/teamspeak3-salted/salt directory.
+
+    sudo salt-call --local state.highstate --file-root .
+
 Now that I have all in the right places I can run my state.
 
     sudo salt '*' state.highstate

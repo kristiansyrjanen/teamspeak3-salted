@@ -2,7 +2,7 @@
 Salt state that will install a Teamspeak 3 daemon on a Xubuntu 18.04 LTS Live-USB instance. 
 
 ## Getting started
-Done on a Lenovo Ideapad 700 with Xubuntu 16.0.4 LTS live-USB.
+Done on a Lenovo Ideapad 700 with Xubuntu 16.0.4 LTS live-USB, tested also with Xubuntu and Kubuntu 18.04 LTS Live-USB.
 
 First I updated my packages.
   
@@ -125,7 +125,7 @@ The bash-script will fetch the Teamspeak 3 daemon tarball, extracts it, moves it
 
     echo -e "\nInitializing Teamspeak 3 Server deployment... \n" 
 
-            apt-get update && upgrade
+            apt-get update
 
 
     echo -e "\nFetching and extracting Teamspeak 3 Server tarball... \n" 
@@ -157,7 +157,7 @@ The bash-script will fetch the Teamspeak 3 daemon tarball, extracts it, moves it
 
 ### Cloning the repository and running the state
 
-I clone the repository and move the **salt** directory. NOTE: You will need **git** for this. (**install it with sudo apt-get install git**)
+I clone the repository and move the **salt** directory under **/srv/**. NOTE: You will need **git** for this. (**install it with sudo apt-get install git**)
 
     git clone https://github.com/kristiansyrjanen/teamspeak3-salted.git
     cd teamspeak3-salted

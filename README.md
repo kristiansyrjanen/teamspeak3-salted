@@ -54,7 +54,7 @@ I started by creating the **top.sls** file. I create the files in **/srv/salt/**
 
 ### Creating the firewall state
 
-I created a **firewall.sls** state file. The firewall state needs **user.rules** and **user6.rules** which will be managed straight from the master, **/srv/salt/firewall/**. It also needs to be enabled. [I used Jori's firewall.sls state here](https://github.com/joonaleppalahti/CCM/blob/master/salt/srv/salt/firewall.sls)
+I created a **firewall.sls** state file. The firewall state needs **user.rules** and **user6.rules** which will be managed straight from the master, **/srv/salt/firewall/**. It also needs to be enabled. [I used Jori's firewall.sls state here.](https://github.com/joonaleppalahti/CCM/blob/master/salt/srv/salt/firewall.sls)
 
     ufw:
       pkg.installed

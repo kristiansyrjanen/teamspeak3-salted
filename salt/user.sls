@@ -7,5 +7,6 @@ teamspeak:
       - teamspeak
     - shell: /bin/bash
     - home: /home/teamspeak
-    - password: {{ password }}
+    - nologinit: True
+    - password: "!"
     - enforce_password: True

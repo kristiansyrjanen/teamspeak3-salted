@@ -11,7 +11,8 @@ gettarextracttar:
   file.symlink:
     - target: /opt/teamspeak/ts3server_startscript.sh
     
-teamspeak.service:
-#  - watch: 
-#    - file: /opt/teamspeak/ts3server_startscript.sh
-  - enable: True
+teamspeakserver:
+  service.running:
+    - name: teamspeak
+    - enable: True
+    - sig: teamspeak

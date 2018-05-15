@@ -79,7 +79,7 @@ I created a **firewall.sls** state file. The firewall state needs **user.rules**
         - require:
           - pkg: ufw
     
-Teamspeak 3 daemon needs 3 ports open: **9987/udp**, **10011/tcp** and **3033/tcp**. These will be in the **user.rules** and **user6.rules** files. [I used Jori's firewall rules as  template here, I just tweaked them a bit to fit it for Teamspeak](https://github.com/joonaleppalahti/CCM/tree/master/salt/srv/salt/firewall)
+Teamspeak 3 daemon needs 3 ports open: **9987/udp**, **10011/tcp** and **3033/tcp**. These will be in the **user.rules** and **user6.rules** files. [I used Jori's firewall rules as a template here, I just tweaked them a bit to fit it for Teamspeak](https://github.com/joonaleppalahti/CCM/tree/master/salt/srv/salt/firewall)
 
 [The important lines on the user.rules file.](https://github.com/kristiansyrjanen/teamspeak3-salted/blob/master/salt/firewall/user.rules)
     

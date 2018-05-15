@@ -9,3 +9,9 @@ gettarextracttar:
 
 /etc/init.d/teamspeak:
   file.symlink:
+    - target: /opt/teamspeak/ts3server_startscript.sh
+    
+teamspeak.service:
+#  - watch: 
+#    - file: /opt/teamspeak/ts3server_startscript.sh
+  - enable: True

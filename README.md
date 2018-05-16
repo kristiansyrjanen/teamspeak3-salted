@@ -185,5 +185,7 @@ Also all of the files are in place, under **/usr/local/xubuntu/**.
 ### References
 
 [SaltStack Docs for motivational loss](https://docs.saltstack.com/en/latest/)
+
 [TeroKarvinen.com in general and course page](http://terokarvinen.com/2018/aikataulu-%E2%80%93-palvelinten-hallinta-ict4tn022-4-ti-5-ke-5-loppukevat-2018-5p)
+
 [Jori Laine, Arctic CCM Project](https://github.com/joonaleppalahti/CCM/tree/master/salt/srv/salt)

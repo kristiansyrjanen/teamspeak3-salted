@@ -3,3 +3,4 @@ base:
     - user
     - firewall
     - teamspeak3daemon
+#    - server

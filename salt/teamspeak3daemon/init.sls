@@ -1,5 +1,3 @@
-# Made by Kristian Syrjänen, 2018.
-
 gettarextracttar:
   archive.extracted:
     - name: /opt/teamspeak
@@ -10,23 +8,24 @@ gettarextracttar:
     - group: teamspeak
     - archive_format: tar
 
-/etc/init.d/teamspeak:
+
+startscript.sh:
+  file.managed:
+    - source: salt://teamspeak3daemon/ts3server_startscript.sh
+    - name: /opt/teamspeak/teamspeak3-server_linux_amd64/ts3server_startscript.sh
+    - user: teamspeak
+    - group: teamspeak
+    - mode: '0755'
+
+/etc/systemd/system/teamspeak:
   file.symlink:
     - target: /opt/teamspeak/teamspeak3-server_linux_amd64/ts3server_startscript.sh
- 
-# macgyvered version that works but wont end the state
-# 16.5.2018 Kristian Syrjänen
+    - mode: '0755'
 
-service.start:
-  cmd.run:
-    - name: /etc/init.d/teamspeak start
-
-
-#notworking 16.5.2018 Kristian Syrjänen
-#The named service teamspeak is not available.
-
-#teamspeakserver:
-#  service.running:
-#    - name: teamspeak
-#    - enable: True
-#    - sig: teamspeak
+teamspeakserver:
+  service.running:
+    - name: teamspeak
+    - watch: 
+      - file: /opt/teamspeak/teamspeak3-server_linux_amd64/ts3server_startscript.sh
+    - enable: True
+    

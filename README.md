@@ -1,3 +1,6 @@
+
+# ! I have modified this to work only using salt, so the bash scripts are now obsolete. !
+
 # teamspeak3-salted
 Salt state that will install a Teamspeak 3 daemon on a Xubuntu 16.04 (and 18.04)LTS Live-USB instance. 
 

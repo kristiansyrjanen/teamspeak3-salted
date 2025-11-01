@@ -69,4 +69,4 @@ After this all Salt-Minions connected to the Salt-Master with the name *teamspea
 
 [Rufus for creating the LIVE-USB](https://rufus.akeo.ie/)
 
-[My personal website/portfolio](https://ksyrjanen.me)
+[My personal website/portfolio](https://kristiansyrjanen.com)
